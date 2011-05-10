@@ -1,6 +1,6 @@
 = rubybooty
 
-Description goes here.
+A simple tool to help Ruby groups hold a lottery to help raise money for the group.
 
 == Contributing to rubybooty
  
