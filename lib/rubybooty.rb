@@ -12,13 +12,14 @@ module Rubybooty
     entrants = {}
 
     while true
-      name = ask("Entrants Name (enter 'done' to finish): ")
+      name = ask("Entrants name (enter 'done' to finish): ")
       break if name.downcase == "done"
-      entries = ask("Number of Entries: (integer only)", Integer)
+      entries = ask("Number of entries: (integer only)", Integer)
       entrants[name] = entries
     end
-
-    agree("Run Now? (yes/no)")
+    
+    sum = entrants.values.inject(0,&:+)
+    agree("Total entries: #{sum}\nRun Now? (yes/no)")
 
     entries = []
     entrants.each { |k,v| v.times { entries << k }}
