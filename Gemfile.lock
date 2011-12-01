@@ -18,7 +18,7 @@ GEM
     rspec-expectations (2.3.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.3.0)
-    yard (0.6.8)
+    yard (0.7.3)
 
 PLATFORMS
   ruby
@@ -29,4 +29,4 @@ DEPENDENCIES
   jeweler (~> 1.6.0)
   rcov
   rspec (~> 2.3.0)
-  yard (~> 0.6.0)
+  yard (~> 0.7.0)
